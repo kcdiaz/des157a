@@ -1,86 +1,162 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: lavender;
-    font-family: 'Cabin', sans-serif;
-  }
-  
-  
-  header {
-    text-align: center;
-    padding: 20px;
-  }
-  
-  h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
-  }
-  
-  h2 {
-    font-size: 20px;
-    font-weight: normal;
-    color: gray;
-  }
-  
-  .banner {
-    text-align: center;
-    margin: 20px 0;
-  }
-  
-  
-  * {
-    box-sizing: border-box;
-  }
-  
-  /* Create three equal columns that floats next to each other */
-  .column {
-    float: left;
-    width: 33.33%;
-    padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
-  }
 
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  h3 {
-    font-size: 30px;
-    margin-bottom: 10px;
-  }
-  
-  h4 {
-    font-size: 20px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
 
-  footer{
-    margin: auto;
-  }
+body {
+ background-color: rgb(211, 211, 248);
+}
 
-  p{
-    text-align: center;
-    padding: 20px;
+
+.main-container {
+  max-width: 1200px;
+  min-width: 800px;
+  margin: 0 auto;
+  font-family: 'Cabin', sans-serif;
+}
+
+
+header {
+  text-align: center;
+}
+
+.responsive {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(49, 49, 49);
+}
+
+.banner {
+  text-align: center;
+  margin: 20px 0;
+}
+
+
+h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+p{
+  text-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+.container {
+  margin: auto;
+  padding: 20px;
+  width: 90%;
+  background-color: #fff;
+  column-count: 3;
+  column-gap: 1;
+}
+
+@media (max-width: 800px) {
+  .container {
+    column-count: 2;
   }
-  
+}
+
+@media (max-width: 480px) {
+  .container {
+    column-count: 1;
+  }
+}
+
+.grid {
+  padding: 5px;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.text {
+  padding: 20px;
+  background-color: #c4efc8;
+}
+
+ul {
+  list-style: none;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+li {
+  position: relative;
+  margin: 10px 0;
+}
+
+li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 25%;
+  height: 2px;
+  background-color: rgb(128, 128, 188);
+  border-radius: 4px;
+  scale: 0 1;
+  transform-origin: right;
+  transition: scale 0.65s;
+}
+
+li:hover::before {
+  scale: 2;
+  transform-origin: left;
+}
+
+.pic {
+  padding: 5px 0;
+  background-color: #c4efc8;
+  color: #fff;
+}
+
+.grid > * {
+  border-radius: 8px;
+}
+
+.pic > *:not(img) {
+  padding: 0 20px;
+}
+
+img.one {
+  padding-left: 80px;
+  height: 50%;
+  width: 50%;
+}
+
+footer{
+  margin-left: auto;
+  margin-right: auto;
+}
