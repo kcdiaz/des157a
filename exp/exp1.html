@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment 1</title>
+</head>
+<body>
+    <h1> Experiment 1</h1>
+    <h2> open the console to see the functionality of the code</h2>
+    <p>This program defines a function called reverseLettersInWords() which takes in a string called sentence. It splits the sentence into an array of words using the split() method, then uses the map() method to reverse the letters in each word and join them back to form a string, finally it joins the reversed words with a space and return. The output of the program will be "sihT si a tset ecnetnes".</p>
+
+    <script>
+        //program that reverses the letters in each word in a string of words, but keeps the words in the same order.
+    function reverseLettersInWords(sentence) {
+        let words = sentence.split(" ");
+        let reversedWords = words.map(word => word.split("").reverse().join(""));
+        return reversedWords.join(" ");
+      }
+      
+      console.log(reverseLettersInWords("This is a test sentence"));
+
+    </script>
+      
+    
+</body>
+</html>
