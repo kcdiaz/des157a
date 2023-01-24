@@ -15,6 +15,12 @@ header {
   text-align: center;
 }
 
+.banner {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+}
+
 .responsive {
   width: 100%;
   max-width: 1100px;
@@ -32,11 +38,6 @@ h2 {
   color: rgb(49, 49, 49);
 }
 
-.banner {
-  text-align: center;
-  margin: 20px 0;
-  width: 100%;
-}
 
 
 h3 {
