@@ -34,9 +34,10 @@ h2 {
   color: rgb(49, 49, 49);
 }
 
-.banner {
-  text-align: center;
-  margin: 20px 0;
+.responsive {
+  width: 100%;
+  max-width: 1100px;
+  height: 200px;
 }
 
 
