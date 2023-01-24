@@ -21,6 +21,15 @@ header {
   width: 100%;
 }
 
+.banner img {
+  transition: 1s ease;
+  }
+  
+ .banner img:hover {
+  border-radius:50%;
+  transition: 1s ease;
+  }
+
 .responsive {
   width: 100%;
   max-width: 1100px;
