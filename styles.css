@@ -25,7 +25,11 @@ header {
   transition: 1s ease;
   }
   
+<<<<<<< HEAD
   .banner img:hover {
+=======
+ .banner img:hover {
+>>>>>>> 4dac0c73c9bbca7734c949e79edf1e6e33fada16
   border-radius:50%;
   transition: 1s ease;
   }
