@@ -1,0 +1,234 @@
+body {
+  max-width: 1000px;
+  min-width: 600px;
+  margin: auto;
+  background-color: rgb(230, 201, 128);
+  font-family: 'Cabin', sans-serif;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 1px;
+  color: #321c11;
+}
+
+.banner {
+  display: block;
+  padding-bottom: 320px;
+  position: relative;
+}
+
+header h3 {
+  padding-top: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.pom {
+  position: absolute;
+  width: 100%;
+  margin-left: auto;
+  margin-right:auto;
+}
+
+.front {
+  width: 100%;
+  height: 250px;
+  z-index: 1;
+  transition-duration: 3s;
+}
+
+
+.banner:hover .front {
+  width: 0;
+  transition-property: width;
+  cursor: pointer;
+}
+
+.back {
+  filter: drop-shadow(2px 2px 4px rgb(68, 68, 68));
+  z-index: 0;
+}
+
+
+main h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 26px;
+  color: #321c11;
+}
+
+main ul {
+  list-style: none;
+  margin:10px;
+  padding: 0;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+main ul li a{
+  color: #605043;
+  text-decoration: none;
+  padding-left: 5px;
+  padding-right: 5px;
+  transition-timing-function: ease-out;
+  transition-duration: 2s;
+}
+
+main ul li a:hover {
+  text-decoration: underline #321c11;
+}
+
+
+.container {
+  display: flex;
+  padding-top: 5px;
+  justify-content: space-between;
+}
+
+
+.studio {
+  flex-direction: column;
+  background-color: #fffeef;
+  position: relative;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  box-shadow: 2px 2px 4px rgb(68, 68, 68);
+  border-radius: 10px;
+}
+
+.columnleft {
+  position: absolute;
+  max-width: 78%;
+  max-height: 78%;
+}
+
+.sheep {
+  bottom: 252px;
+  left: 25px;
+  transition: transform .1s;
+}
+
+.sheep:hover {
+  transform:scale(1.2);
+}
+
+
+.rd {
+  flex-direction: column;
+  background-color:  #fffeef;
+  position: relative;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  box-shadow: 2px 2px 4px rgb(68, 68, 68);
+  border-radius: 10px;
+}
+
+.middle {
+  position: absolute;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.strawberry {
+  bottom: 250px;
+  left: 35px;
+  transition: transform .1s;
+}
+
+.strawberry:hover {
+  transform:scale(1.2);
+}
+
+.final {
+  flex-direction: column;
+  position: relative;
+  background-color:  #fffeef;
+  padding-left: 90px;
+  padding-right: 90px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  box-shadow: 2px 2px 4px rgb(68, 68, 68);
+  border-radius: 10px;
+}
+
+.columnright {
+  position: absolute;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.rainy {
+  bottom: 240px;
+  left: 35px;
+  transition: transform .1s;
+}
+
+.rainy:hover {
+  transform:scale(1.2);
+}
+
+.qtpom {
+  position: absolute;
+  max-width: 90%;
+  max-height: 90%;
+  bottom: 12px;
+  left: 18px;
+}
+
+.rain {
+  position: absolute;
+  top: 190px;
+  height: 90px;
+  width: 90px;
+  opacity: 0;
+}
+
+@keyframes raindrop1 {
+  0% {transform: translate(0,0) scale(0.25); opacity: 1;}
+  100% {transform: translate(-30px, -20px) scale(0.5); opacity:0;}
+}
+
+@keyframes raindrop2 {
+  0% {transform: translate(0,0) scale(0.25); opacity: 1;}
+  100% {transform: translate(100px, 10px) scale(0.5); opacity:0;}
+}
+
+#rain1 {
+  animation: raindrop1 3s ease-in-out infinite;
+
+}
+
+#rain2 {
+  animation: raindrop2 3s ease-in-out 0.5s infinite;
+
+}
+
+#rain3 {
+  animation: praindrop1 3s ease-in-out 1s infinite;
+}
+
+
+footer {
+  display:flex;
+  justify-content: space-between;
+  padding: 5px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1em;
+  color: #321c11;
+}
+
+footer a {
+  text-decoration: none;
+  color: #321c11;
+}
+
+footer a:hover {
+  text-decoration: underline #321c11;
+}
