@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #display-area {
+        font-size: 20px;
+        padding: 20px;
+        text-align: left;
+      }
+    </style>
+  </head>
+
+  <body onload="changeColor()">
+    <div id="display-area"></div>
+    <ul>
+        <li>
+          <a href="https://kcdiaz.github.io/des157a/">Back to Portal Page</a>
+        </li>
+    </ul>
+  </body>
+
+  <script>
+    /* This program asks the user for their favorite color and displays the personality type
+       associated with the color based on predefined data stored in an array */
+
+    function getColorPersonality(color) {
+      var colorPersonality = [
+        {color: "pink", personality: "loving, kind, and sensitive individual, often with a strong nurturing and sensual side. Your romantic view of life is said to bring you to have idealistic standards. You have a sweet, charming side that often makes you a delicate and lovable individual."},
+        {color: "purple", personality: "an imaginative and creative person who values luxury, elegance, and sophistication. You have a strong spiritual side, and a deep connection to your inner wisdom. You are also said to be confident, independent, and full of original ideas."},
+        {color: "blue", personality: "a calm, dependable, and honest individual. Your serene outlook on life and ability to remain level-headed under pressure make you a great friend to have. You are also said to be sincere, trustworthy, and a good listener."},
+        {color: "orange", personality: "a fun-loving and energetic person with a zest for life. You are said to be optimistic, confident, and always up for a challenge. Your bold and adventurous spirit make you an inspiring and captivating individual."}
+      ];
+
+      for (var i = 0; i < colorPersonality.length; i++) {
+        if (colorPersonality[i].color === color) {
+          return colorPersonality[i].personality;
+        }
+      }
+      return "";
+    }
+
+    function changeColor() {
+      var color = prompt("Enter your favorite color from the following list: pink, purple, blue, orange");
+      document.body.style.background = color;
+      var personality = getColorPersonality(color);
+      document.getElementById("display-area").innerHTML = "Background color changed to: " + color + "<br><br>" + "Personality type: " + personality;
+    }
+  </script>
+
+</html>
+
+
