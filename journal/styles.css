@@ -27,6 +27,15 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 15px;
+  }
+
+  .container2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .column {
     width: 750px;
@@ -38,6 +47,18 @@ body {
     font-size: 18px;
     box-shadow: 5px 5px 10px #9a978f;
   }
+
+  .column2 {
+    width: 750px;
+    padding: 50px;
+    background-color: #856193;
+    color: #ededed;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 18px;
+    box-shadow: 5px 5px 10px #9a978f;
+  }
+
   @media only screen and (max-width: 1200px) {
     .column {
       width: 100%;
