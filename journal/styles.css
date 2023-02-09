@@ -36,6 +36,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 15px;
   }
 
   .container3 {
