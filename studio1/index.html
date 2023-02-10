@@ -1,56 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <title>KC's Bakery</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="script.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KC's Bakery</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="script.js" defer></script>
 </head>
 
 <body>
+    <main>
+        <header>
+            <h1>Welcome to KC's Bakery</h1>
+            <section>
+                <img src="images/kcbakerybanner.png" alt="bakery" width="550" height="550">
+            </section>
+        </header>
 
-<header>
-<h1> 🍪welcome to kc's bakery!</h1>
-<img src="images/pommiebake.png" img>
 
-</header>
+        <section id="formSection">
+            <h2>Please fill out the order form:</h2>
 
-  <div class="notepad">
-    <h2>Check the items you would like to order:</h2>
-    <form id="bakery-form">
-      <label>
-        <input type="checkbox" value="🍫Chocolate Pastries">
-        🍫Chocolate Pastries
-      </label>
-      <label>
-        <input type="checkbox" value="🍓Strawberry Pastries">
-        🍓Strawberry Pastries
-      </label>
-      <label>
-        <input type="checkbox" value="🍰Slice of Cake (mystery flavor)">
-        🍰Slice of Cake (mystery flavor)
-      </label>
-      <label>
-        <input type="checkbox" value="🧁Buttercream Cupcakes">
-        🧁Buttercream Cupcakes
-      </label>
-      <label>
-        <input type="checkbox" value="🍪Cookies">
-        🍪Cookies
-      </label>
-      <label>
-        <input type="checkbox" value="🍩Mochi Donut">
-        🍩Mochi Donut
-      </label>
-      <label>
-        <input type="checkbox" value="🎂Birthday Surprise">
-        🎂Birthday Surprise
-      </label>
-      <input type="submit" value="Submit Order">
-    </form>
-  </div>
+            <form id="myform">
+                <label for="aTime" class="labels">When would you like this order to be completed?</label>
+                <input type="text" id="aTime" required>
+
+                <label for="adj" class="labels">Pick a flavor:</label>
+                <input type="text" id="adj" required>
+
+                <label for="aIngredient" class="labels">Pick a special ingredient</label>
+                <input type="text" id="aIngredient" required>
+
+                <label for="dislike" class="labels">What flavor do you dislike?</label>
+                <input type="text" id="text" required>
+
+                <label for="item" class="labels">Do you want to leave a special note?</label>
+                <input type="text" id="note" required>
+
+                <fieldset>
+                    <legend>Choose a theme for your pastry pack</legend>
+                    <input type="radio" name="decoration" id="pink" value="pink">
+                    <label class="decorClass" for="Pink">Pink</label>
+
+                    <input type="radio" name="decoration" id="purple" value="purple">
+                    <label class="decorClass" for="Purple">Purple</label>
+
+                    <input type="radio" name="decoration" id="blue" value="blue">
+                    <label class="decorClass" for="Blue">Blue</label>
+
+                    <input type="radio" name="decoration" id="green" value="green">
+                    <label class="decorClass" for="Green">Green</label>
+
+                    <input type="radio" name="decoration" id="mystery" value="mystery">
+                    <label class="decorClass" for="Mystery">Mystery</label>
+                </fieldset>
+
+
+                <input id="submitBtn" type="submit" value="Submit Order">
+            </form>
+        </section>
+    </main>
+
+
+    <section id="overlay" class="hidden">
+        <section>
+          <p id="backBtn">back</p>
+          <h1>KC's Bakery</h1>
+          <img id="pastryDecor" src="images/pinkset.png" alt="pink pastry set" width="550" height="550">
+        </section>
+        <article>
+          <p>Here is your order that you wanted by: <b id="aTimeBlank">${aTime}</b></p>
+          <p>
+            <b class="headers">Flavor:</b><br> 4 pastries with <b id="adjBlank">${adj}</b> filling <br>
+            <b id="aIngredientBlank">${aIngredient}</b> sprinkles <br>
+            <b id="decorationBlank">${decoration}</b> Box <br> 
+          </p>
+          <p>
+            <b class="headers">Special Note:</b><br> <b id="noteBlank">${note}</b>
+          </p>
+        </article>
+      </section>
+      
+
+
+       <footer>
+        <a href="https://kcdiaz.github.io/des157a/">Portal Page</a>
+      </footer>
+
+
+
 
 </body>
+
 </html>
