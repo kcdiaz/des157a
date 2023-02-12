@@ -184,7 +184,7 @@ footer a {
     margin-top: 10px;
 }
 
-#overlay article {
+#overlay-content {
     box-sizing: border-box;
     background-color: #fff;
     padding: 20px;
@@ -211,7 +211,7 @@ article p {
     font-size: 24px;
 }
 
-#congrats {
+#overlay-content {
     margin-top: 60px;
     font-family: 'Walter Turncoat', cursive;
     font-size: 32px;
