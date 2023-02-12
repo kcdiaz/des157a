@@ -72,13 +72,12 @@
 
   <section id="overlay" class="hidden">
     <div class="overlay-content">
-      <p id="backBtn">back</p>
-      <h1>KC's Bakery</h1>
-      <img id="pastryDecor" src="images/pinkset.png" alt="pink pastry set" width="550" height="550">
+      <div id="sides">
+      <img id="pastryDecor" src="images/pinkset.png" alt="pink pastry set" width="520" height="520">
       <article>
-        <p>Here is your order that you wanted by: <b id="aTimeBlank">${aTime}</b></p>
+        <p>Here are your pastries that you wanted by: <b id="aTimeBlank">${aTime}</b></p>
         <p>
-          <b class="headers">Flavor:</b>
+          <b class="headers">Your order:</b>
           <br> 4 pastries with <b id="adjBlank">${adj}</b> filling 
           <br> <b id="aIngredientBlank">${aIngredient}</b> sprinkles 
           <br> <b id="decorationBlank">${decoration}</b> Box 
@@ -87,7 +86,11 @@
           <b class="headers">Special Note:</b>
           <br> <b id="noteBlank">${note}</b>
         </p>
+
+        <p id="congrats">Thank you!</p>
+        <p id="backBtn">back</p>
       </article>
+      </div>
     </div>
   </section>
   
