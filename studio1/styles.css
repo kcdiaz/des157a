@@ -26,6 +26,7 @@ h2 {
     margin: 10px 0px 10px 0px;
 }
 
+
 #formSection {
     background-color: #c39980;
     padding: 10px 50px 20px 50px;
@@ -152,6 +153,8 @@ footer {
     display: flex;
     justify-content: center;
     margin: 0px 20px 20px 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 footer a {
@@ -167,15 +170,20 @@ footer a {
 
 /* overlay styling */
 
+#sides {
+    display: flex;
+    }
+
 #overlay {
     /* max-width: 1366px;
     min-width: 900px; */
     position: absolute;
     justify-content: space-around;
     align-items: center;
-    background-color: #ededed;
+    background-color: #e9cacd;
     top: 0;
     left: 0;
+    padding-left: 170px;
     width: 100%;
     height: 100%;
 }
@@ -184,12 +192,12 @@ footer a {
     margin-top: 10px;
 }
 
-#overlay-content {
+#overlay article {
     box-sizing: border-box;
     background-color: #fff;
     padding: 20px;
-    width: 510px;
-    height: 700px;
+    width: 550px;
+    height: 100%;
     max-width: 1366px;
     max-height: 768px;
     box-shadow: 4px 4px 6px 0px rgba(50, 50, 50, 0.25);
@@ -207,11 +215,15 @@ article p {
     letter-spacing: .25px;
 }
 
+.overlay-content{
+    margin-top: 80px;
+}
+
 .headers {
     font-size: 24px;
 }
 
-#overlay-content {
+#congrats {
     margin-top: 60px;
     font-family: 'Walter Turncoat', cursive;
     font-size: 32px;
@@ -219,7 +231,7 @@ article p {
 }
 
 #backBtn {
-    padding: 10px 40px 10px 40px;
+    padding: 12px 50px 10px 50px;
     width: 40px;
     background-color: #667DB9;
     color: white;
