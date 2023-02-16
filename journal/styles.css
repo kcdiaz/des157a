@@ -1,16 +1,16 @@
 body {
-    background-color: rgb(255, 247, 228);
+    background-color: rgb(240, 233, 255);
     font-family: Cabin, sans-serif;
     text-align: center;
   }
   h1 {
     font-size: 40px;
-    color: #321c11;
+    color: #181925;
   }
 
   h3 {
     font-size: 20px;
-    color: #583726;
+    color: #130f18;
   }
 
   p a {
@@ -40,6 +40,15 @@ body {
   }
 
   .container3 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 15px;
+  }
+
+  .container4 {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -79,6 +88,22 @@ body {
     font-size: 18px;
     box-shadow: 5px 5px 10px #9a978f;
   }
+
+  .column4 {
+    width: 750px;
+    padding: 50px;
+    background-color: #3d4576;
+    color: #ededed;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 18px;
+    box-shadow: 5px 5px 10px #9a978f;
+  }
+
+  figure{
+    text-align: center;
+}
+
 
   @media only screen and (max-width: 1200px) {
     .column {
