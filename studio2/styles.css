@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    max-width: 1200px;
+    min-width: 900px;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    background-image: url('images/background1.jpg');
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+  }
+
+  .index {
+    margin: auto;
+    background-image: url(images/background1.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+
+  body.amsterdam {
+        background-image: url(images/image1.jpg);
+        background-size: cover;
+        transition: background-image 0.5s ease-in-out;
+      
+  }
+
+  
+  .title {
+    height: 1em;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 3em;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    padding-top: 2%;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+
+  .title a {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 1%;
+  }  
+
+  .fa-chevron-down {
+    color: #fff;
+  }
+  
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    background-color: transparent;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family:'Roboto', sans-serif;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    min-width: 160px;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+    background-color: rgba(160, 160, 160, 0.403);
+    border-radius: 10px;
+    color: #333;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 6%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+  
+  
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.numbers {
+    position: absolute;
+    top: 30%;
+    left: 13%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  
+  .numbers h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+
+  .numbers a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .numbers a.active {
+    color: rgb(244, 244, 244);
+    font-weight: bold;
+}
+
+.numbers a.fade {
+    opacity: 0.5;
+}
+  
+.fade-in {
+    position: relative;
+    z-index: 0;
+  }
+
+.hero-container {
+    position: relative;
+  }
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-text {
+    position: absolute;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.266);
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    top: 95%;
+    left: 88%;
+    width: 250px;
+    transform: translate(-50%, -50%);
+    margin-top: 10px; 
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    font-size: 40px;
+  }
+  
+  .arrow-left {
+    left: 40px;
+  }
+  
+  .arrow-right {
+    right: 40px;
+  }
+
+  .sidefooter {
+    text-align: left;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .sidefooter ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+    margin-top: 5px;
+  
+  }
+  
+  .sidefooter li {
+    display: inline-block;
+    margin-right: 20px;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+    margin-top: 5px;
+
+  }
+  
+  .sidefooter p {
+    margin-top: 7px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.618);
+  }
+
+ul{
+    text-decoration: none;
+    color: inherit;
+    margin-top: 5px;
+}
+
+li{
+    text-decoration: none;
+    color: inherit;
+    margin-top: 5px;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+  
+  
+  
