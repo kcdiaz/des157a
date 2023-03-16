@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Game of Pig</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1 id="logo">
+        <a href=""></a>
+    </h1>
+
+    <button id="infoBtn">?</button>
+
+    <section id="gameplay">
+        <section id="p1">
+            <h2>Player 1</h2>
+            <section id="p1Section">
+                <p id="currScoreText1">Your Move:</p>
+                <p id="score1"></p>
+                <div id="buttons1"></div>
+            </section>
+        </section>
+
+        <div id="middle">
+            <div id="dice">
+                <img src="images/masterpiggy.png" alt="">
+            </div>
+            <p id="actionText"></p>
+            <button id="quitBtn" class="hidden">QUIT GAME</button>
+            <button id="startgame" class="showing">Randomly Pick the First Player, and Start the Game</button>
+        </div>
+
+        <section id="p2">
+            <h2>Player 2</h2>
+            <section id="p2Section">
+                <p id="currScoreText2">Your Move:</p>
+                <p id="score2"></p>
+                <div id="buttons2"></div>
+            </section>
+        </section>
+        
+    </section>
+
+    <section id="infoOverlay" class="hidden">
+        <article>
+            <p>The game is played by two players, and on each turn, the current player rolls a pair of dice. The sum of the dice is added to the current player's score, as long as neither die shows a "one". If a player rolls two "ones" (snake eyes), their current score is reset to zero, and their turn ends. After each successful roll, the current player can choose to either roll again or pass the turn to the other player. </p>
+            <p> The first player to reach a score of 30 points or higher wins. However, if a player rolls two "ones" (snake eyes), their score is reset to zero, so players must be careful to avoid this outcome.</p>
+            <button class="close" id="backBtn">X</button>
+        </article>
+    </section>
+
+    <footer>
+        <a href="sources.html">Sources</a>
+        <a href="https://kcdiaz.github.io/des157a/">Back to Portal Page</a>
+        <a href="mailto:kcddiaz@ucdavis.edu">KC Diaz 2023</a>
+    </footer>
+
+</body>
+
+</html>
+
