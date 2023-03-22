@@ -1,0 +1,33 @@
+body {
+    font-family: 'Sono', sans-serif;
+    color: #181818;
+    padding: 50px;
+    line-height: 1.5em;
+    background-color: #f7f7f7;
+    max-width: 1366px;
+}
+
+h2{
+    padding-top: 1%;
+    color: rgb(39, 79, 152);
+}
+
+
+footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    margin: 30px;
+
+    color: #54395e;
+    text-decoration: none;
+    font-family: 'Sono', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    border-radius: 4px;
+}
