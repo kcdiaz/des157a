@@ -1,0 +1,379 @@
+/* font-family: 'Playfair Display', serif; */
+
+body {
+    font-family: 'Kelly Slab', cursive;
+    color: #ffffff;
+    padding: 50px;
+    line-height: 1.5em;
+    background-image: url('images/hero-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 1366px;
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 700;
+    padding-left: 80px;
+}
+
+#logo {
+    padding: 70px 0 0 0;
+    overflow: hidden;
+    background-image: url('images/title.png');
+    background-repeat: no-repeat;
+    height: 0px !important;
+    height /**/:50px;
+}
+
+p {
+    color: rgb(255, 255, 255);
+}
+
+/* button { 
+    padding: 10px;
+}
+
+div {
+    padding: 20px;
+} */
+
+/* #score {
+    background-color: aliceblue;
+}
+
+#game {
+    background-color:#eaeaea;
+}
+#actions {
+    background-color: silver;
+} */
+
+
+/* code for styling info button and overlay */
+#infoBtn {
+    position: absolute;
+    top: 80px;
+    right: 60px;
+    color: #c8a232;
+    background-color: #F4F4F4;
+    width: 45px;
+    height: 45px;
+    border: 0px;
+    border-radius: 40px;
+    font-family: 'Kelly Slab', cursive;
+    font-weight: 700;
+    font-size: 30px;
+}
+#infoBtn:hover {
+    color: white;
+    background-color: #c8a232;
+    cursor:pointer;
+}
+
+#infoOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    background-color: rgba(255, 255, 255, 0.515);
+}
+
+#infoOverlay article {
+    box-sizing: border-box;
+    background-color: #2475b7;
+    border-radius: 20px;
+    padding: 60px;
+    width: 675px;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#infoOverlay p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+
+#backBtn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #000000;
+    background-color: #ffffff;
+    width: 35px;
+    height: 35px;
+    border: 0px;
+    border-radius: 40px;
+    font-family: 'Kelly Slab', cursive;
+    font-weight: 700;
+    font-size: 20px;
+}
+#backBtn:hover {
+    color: white;
+    background-color: #973f19;
+    cursor:pointer;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.showing {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* code for styling the game control */
+
+
+/* code for styling main space with game */
+
+#gameplay {
+    margin: 0 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+/* Styling the middle section */
+#middle {
+    display: grid;
+    margin-top: 110px;
+    width: 300px;
+}
+
+#dice {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#dice img {
+    display: block;
+    margin: 30px;
+    width: 120px;
+}
+
+#actionText {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90px;
+}
+
+#actionText h2{
+    text-transform: uppercase;
+}
+
+#startgame {
+    padding: 15px 25px;
+    height: 100px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #c97c10;
+}
+#startgame:hover {
+    color: white;
+    background-color: #0053ac;
+    cursor:pointer;
+}
+
+#quitBtn {
+    /* position: absolute;
+    top: 600px;
+    left: 40vw; */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 25px;
+
+    height: 55px;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 20px;
+    font-weight: 600;
+    color: #c97c10;
+    background-color: #ffffff;
+}
+#quitBtn:hover {
+    color: white;
+    background-color: #0053ac;
+    cursor:pointer;
+}
+
+
+
+
+/* styling player 1's side*/
+
+#p1 {
+    margin: 20px;
+    /* justify-content: center; */
+}
+
+
+#p1 h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 200;
+}
+
+#p1 section {
+    display: block;
+    background-color: #ffffffae;
+    /* background-color: #c42178; */
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+#currScoreText1 {
+    margin: 20px;
+    padding-top: 40px;
+    font-size: 24px;
+    color: #389815;
+    
+}
+
+#score1 {
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    font-weight: 700;
+    color: #389815;
+
+}
+
+#buttons1 {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#buttons1 button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background-color: #389815;
+    text-transform: uppercase;
+}
+
+#buttons1 button:hover {
+    background-color: #8c857d;
+    cursor: pointer;
+}
+
+
+/* styling player 2's side */
+#p2 {
+    margin: 20px;
+    /* justify-content: center; */
+}
+
+
+#p2 h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 200;
+}
+
+#p2 section {
+    display: block;
+    background-color: #ffffffae;
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+#currScoreText2 {
+    margin: 20px;
+    padding-top: 40px;
+    font-size: 24px;
+    color:#d16b12;
+    
+}
+
+#score2 {
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    font-weight: 700;
+    color:#d16b12;
+
+}
+
+#buttons2 {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#buttons2 button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    background-color: #d16b12;
+    text-transform: uppercase;
+}
+
+#buttons2 button:hover {
+    background-color: #8c857d;
+    cursor: pointer;
+}
+
+
+/* styling the footer */
+footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    margin: 30px;
+
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    border-radius: 4px;
+}
+
+
+/* styling the Sources page */
+#winLink {
+    text-decoration: none;
+    color: rgb(44, 44, 45);
+    font-family: 'Raleway', sans-serif;
+}
+
+.sourcesText {
+    font-size: 24px;
+    font-weight: 600;
+}

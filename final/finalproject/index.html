@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Game of Pig</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap" rel="stylesheet">
+
+    <link href="styles.css" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h1 id="logo">
+        <a href=""></a>
+    </h1>
+
+    <button id="infoBtn">?</button>
+
+    <section id="gameplay">
+        <section id="p1">
+            <h2>Player 1</h2>
+            <section id="p1Section">
+                <p id="currScoreText1">Your Move:</p>
+                <p id="score1"></p>
+                <div id="buttons1"></div>
+            </section>
+        </section>
+
+        <div id="middle">
+            <div id="dice">
+            </div>
+            <p id="actionText"></p>
+            <button id="quitBtn" class="hidden">QUIT GAME</button>
+            <button id="startgame" class="showing">Randomly Pick the First Player, and Start the Game</button>
+        </div>
+
+        <section id="p2">
+            <h2>Player 2</h2>
+            <section id="p2Section">
+                <p id="currScoreText2">Your Move:</p>
+                <p id="score2"></p>
+                <div id="buttons2"></div>
+            </section>
+        </section>
+        
+    </section>
+
+    <section id="infoOverlay" class="hidden">
+        <article>
+            <p>The game is called "Save Master Piggy" and is played by two players. On each turn, the current player rolls the rock, which moves up and down above Master Piggy. The challenge is to avoid hitting Master Piggy with the rock. If the player successfully avoids hitting Master Piggy, their score increases by 1 point. If the player hits Master Piggy, their score is reset to zero, and their turn ends. </p>
+            <p> The first player to reach a score of 30 points or higher wins. However, players must be careful not to hit Master Piggy, or their score will be reset to zero. </p>
+            <button class="close" id="backBtn">X</button>
+        </article>
+    </section>
+
+    <footer>
+        <a href="sources.html">Sources</a>
+        <a href="https://kcdiaz.github.io/des157a/">Back to Portal Page</a>
+        <a href="mailto:kcddiaz@ucdavis.edu">KC Diaz 2023</a>
+    </footer>
+
+</body>
+
+</html>
+
